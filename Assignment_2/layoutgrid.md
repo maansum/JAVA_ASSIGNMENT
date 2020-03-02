@@ -16,13 +16,14 @@ and vertical gap.
 
 ### Methods:
 
--**addLayoutComponent(String str, Component cmp)**: Adds the specified component with the specified name to the layout.
--**setColumns(int cl)**: Sets the number of columns in this layout to the specified value.
--**setHgap(int hgap)**: Sets the horizontal gap between components to the specified value.
--**setRows(int rw)**: Sets the number of rows in this layout to the specified value.
--**setVgap(int vgap)**: Sets the vertical gap between components to the specified value.
--**layoutContainer(Container pr)**: Lays out the specified container using this layout.
--**toString()**: Returns the string representation of this grid layout’s value
+- **addLayoutComponent(String str, Component cmp)**: Adds the specified component with the specified name to the layout.
+- **setColumns(int cl)**: Sets the number of columns in this layout to the specified value.
+
+- **setHgap(int hgap)**: Sets the horizontal gap between components to the specified value.
+- **setRows(int rw)**: Sets the number of rows in this layout to the specified value.
+- **setVgap(int vgap)**: Sets the vertical gap between components to the specified value.
+- **layoutContainer(Container pr)**: Lays out the specified container using this layout.
+- **toString()**: Returns the string representation of this grid layout’s value
 
 
 _code_
