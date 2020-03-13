@@ -123,11 +123,12 @@ public static void main(String[] args) {
 
 # Event listener:
 
-![](https://www.google.com/url?sa=i&url=http%3A%2F%2Fjavawithsuman.blogspot.com%2Fp%2Fevent-handling.html&psig=AOvVaw17CjG6zw9cpIDb1lRe3wSB&ust=1584204693849000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjGrMT0l-gCFQAAAAAdAAAAABAV)
+
+![photo](https://www.google.com/url?sa=i&url=http%3A%2F%2Fjavawithsuman.blogspot.com%2Fp%2Fevent-handling.html&psig=AOvVaw17CjG6zw9cpIDb1lRe3wSB&ust=1584204693849000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjGrMT0l-gCFQAAAAAdAAAAABAV)
 
 The Event listener represent the interfaces responsible to handle events. Java provides us various Event listener classes but we will discuss those which are more frequently used. Every method of an event listener method has a single argument as an object which is subclass of EventObject class. For example, mouse event listener methods will accept instance of MouseEvent, where MouseEvent derives from EventObject.
 
-EventListner interface
++ EventListner interface
 It is a marker interface which every listener interface has to extend.This class is defined in java.util package.
 
 
@@ -181,9 +182,12 @@ similarly there are other event listenerand methods of their own.
 
 
 for KeyListener interface:
+
+
 methods are:
-_public abstract void keyPressed(KeyEvent e);  
-_public abstract void keyReleased(KeyEvent e);  
+
+_public abstract void keyPressed(KeyEvent e);_  
+_public abstract void keyReleased(KeyEvent e);_  
 _public abstract void keyTyped(KeyEvent e);_
 
 __code__
@@ -231,7 +235,10 @@ public class KeyListenerExample extends Frame implements KeyListener{
 Java adapter classes provide the default implementation of listener interfaces. If you inherit the adapter class, you will not be forced to provide the implementation of all the methods of listener interfaces. So it saves code.
 
 The adapter classes are found in java.awt.event, java.awt.dnd and javax.swing.event packages.
-![](https://www.google.com/imgres?imgurl=https%3A%2F%2Fmybscit.com%2Fwp-content%2Fuploads%2F2016%2F08%2FCapture5-1024x382.png&imgrefurl=http%3A%2F%2Fwww.mybscit.com%2Fadvance-java%2Fadapter-classes-in-java&tbnid=3K4KbQnE5WQ7YM&vet=12ahUKEwi77r7f-JfoAhXGzXMBHWjqCHEQMygDegUIARDiAQ..i&docid=4sW-buLHb4zQ4M&w=1024&h=382&q=adapter%20class%20in%20java&ved=2ahUKEwi77r7f-JfoAhXGzXMBHWjqCHEQMygDegUIARDiAQ)
+![photo](https://www.google.com/imgres?imgurl=https%3A%2F%2Fmybscit.com%2Fwp-content%2Fuploads%2F2016%2F08%2FCapture5-1024x382.png&imgrefurl=http%3A%2F%2Fwww.mybscit.com%2Fadvance-java%2Fadapter-classes-in-java&tbnid=3K4KbQnE5WQ7YM&vet=12ahUKEwi77r7f-JfoAhXGzXMBHWjqCHEQMygDegUIARDiAQ..i&docid=4sW-buLHb4zQ4M&w=1024&h=382&q=adapter%20class%20in%20java&ved=2ahUKEwi77r7f-JfoAhXGzXMBHWjqCHEQMygDegUIARDiAQ)
+
+
+
 __code for window adapter class__
 
 
@@ -290,6 +297,7 @@ public static void main(String[] args) {
 
 -----------------------------------------
 # finally closable frame
+
 We can close the AWT Window or Frame by calling dispose() or System.exit() inside windowClosing() method. The windowClosing() method is found in WindowListener interface and WindowAdapter class.
 
 The WindowAdapter class implements WindowListener interfaces. It provides the default implementation of all the 7 methods of WindowListener interface. To override the windowClosing() method, you can either use WindowAdapter class or WindowListener interface.
