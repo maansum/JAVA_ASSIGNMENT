@@ -110,3 +110,17 @@ class GraphicHouse extends Canvas
 }
 
 ```
+# difference
+
+|TRANSMISSION CONTROL PROTOCOL (TCP)	| USER DATAGRAM PROTOCOL (UDP)|
+|----------------------------------------|-----------------------------|
+|1. TCP is a connection-oriented protocol. Connection-orientation means that the communicating devices should establish a connection before transmitting data and should close the connection after transmitting the data.|1.	UDP is the Datagram oriented protocol. This is because there is no overhead for opening a connection, maintaining a connection, and terminating a connection. UDP is efficient for broadcast and multicast type of network transmission.|
+|2. TCP is reliable as it guarantees delivery of data to the destination router.| 2. The delivery of data to the destination cannot be guaranteed in UDP.|
+|3.TCP provides extensive error checking mechanisms. It is because it provides flow control and acknowledgment of data.|2.	UDP has only the basic error checking mechanism using checksums.|
+|Sequencing of data is a feature of Transmission Control Protocol (TCP). this means that packets arrive in-order at the receiver.|	There is no sequencing of data in UDP. If ordering is required, it has to be managed by the application layer.|
+|TCP is comparatively slower than UDP.|	UDP is faster, simpler and more efficient than TCP.|
+|Retransmission of lost packets is possible in TCP, but not in UDP.|	There is no retransmission of lost packets in User Datagram Protocol (UDP).|
+|TCP has a (20-80) bytes variable length header.|	UDP has a 8 bytes fixed length header.|
+|TCP is heavy-weight.|	UDP is lightweight.|
+|TCP doesn’t supports Broadcasting.|	UDP supports Broadcasting.|
+
